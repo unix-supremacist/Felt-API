@@ -1,0 +1,3 @@
+dependencies {
+    implementation project(path: ':felt-api-base', configuration: 'namedElements')
+}

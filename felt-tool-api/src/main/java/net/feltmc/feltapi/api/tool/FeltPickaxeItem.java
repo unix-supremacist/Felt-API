@@ -1,12 +1,11 @@
 package net.feltmc.feltapi.api.tool;
 
-import net.feltmc.feltapi.api.tool.interactions.Torching;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.context.UseOnContext;
 
-public class FeltPickaxeItem extends PickaxeItem implements Torching {
+public class FeltPickaxeItem extends PickaxeItem {
     boolean torchingEnabled;
     public FeltPickaxeItem(Tier material, int attackDamage, float attackSpeed, Properties settings) {
         this(material, attackDamage, attackSpeed, settings, false);
@@ -20,7 +19,7 @@ public class FeltPickaxeItem extends PickaxeItem implements Torching {
     @Override
     public InteractionResult useOn(UseOnContext context) {
         if (torchingEnabled){
-            return torch(context);
+            return FeltToolHelper.torch(context);
         } else {
             return InteractionResult.PASS;
         }

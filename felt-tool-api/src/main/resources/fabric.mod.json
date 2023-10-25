@@ -22,7 +22,8 @@
   ],
   "depends": {
     "fabricloader": "*",
-    "minecraft": "*"
+    "minecraft": "*",
+    "felt-api-base": "*"
   },
   "custom": {
     "modmenu": {

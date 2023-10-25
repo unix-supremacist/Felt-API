@@ -5,8 +5,8 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "AxeMixin",
-    "ShovelMixin",
-    "HoeMixin"
+    "HoeMixin",
+    "ShovelMixin"
   ],
   "injectors": {
     "defaultRequire": 1
